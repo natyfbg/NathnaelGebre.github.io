@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a520c587fe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark menu" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars menu" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Nathnael</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------- About Section ------------------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="small-programmer"><img src="/images/programmer.gif"></div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        "Seasoned full-stack developer with 7 years of experience inWeb Development, Database Management, and Python based Machine Lerning.</span> <br>
+                        Demonstrated success in crafting scalable web applications, optimizing databases, and deploying machine learning models.
+                        A collaborative problem solver, committed to delivering cohesive user experiences and innovative solutions."
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing Web interfaces</li>
+                            <li><span>Data Engineering</span><br>Manage/Analyze Data</li>
+                            <li><span>UI/UX Design</span><br>Designing web interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2018 - 2023</span><br>Full Stack Web Developer at Mad Services</li>
+                            <li><span>2012 - 2018</span><br>Data Engineer at NSO Asmara</li>
+                            <li><span>2018 - 2023</span><br>Contract Web Deveoper</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2023</span><br>Bachelor of Science in Computer Science at SFSU</li>
+                            <li><span>2018-2021</span><br>Associate Degree in Mathematics at Laney College</li>
+                            <li><span>2023</span><br>Certificate in Data Science and Machine Learning for Biotechnology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------- Services ---------------------------------------------->
+
+    <div id="services">
+        <div class="container services">
+            <h1 class="sub-title services">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                         eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                         <a href="">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data Engineering</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                         eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                         <a href="">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Designing</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                         eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                         <a href="">learn more</a>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------Portfolio----------------------------------------- -->
+
+    <div id="portfolio">
+        <div class="container services">
+            <h1 class="sub-title">Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="/images/Web Designing.jpg">
+                    <div class="layer">
+                        <h3>Fitness Websit</h3>
+                        <p>A website that us built for Personal trainers
+                            to help guide their clients reach their fitness goal</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="/images/Data Engineering.jpg">
+                    <div class="layer">
+                        <h3>Fitness Websit</h3>
+                        <p>A website that us built for Personal trainers
+                            to help guide their clients reach their fitness goal</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="/images/Game Development.jpg">
+                    <div class="layer">
+                        <h3>Fitness Websit</h3>
+                        <p>A website that us built for Personal trainers
+                            to help guide their clients reach their fitness goal</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+<!-- ----------------------------------------Contact Me----------------------------------- -->
+
+
+<div id="contact">
+    <div class="container contact">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="contact-me">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>gebrenathnael@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>202-499-8901</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Nathnaell"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/nathnael-gebre-6348b41a6/"><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href="https://github.com/natyfbg"><i class="fa-brands fa-github"></i></i></a>
+                    <a href="https://www.instagram.com/nathy_fbg/"><i class="fa-brands fa-instagram"></i></i></i></a>
+                </div>
+                <a href="/Assets/Nathnael Gebre Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Namne" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+                    <button id="submit-button" type="submit" class="btn btn2 btn3" onclick="handleButtonClick()">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Nathnael.</p>
+    </div>
+</div>
+
+
+    <script src="/index.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyM1ppgCxB0RluO4I-xqgZdLEL4laDKlSkepR80ZWv2ZoYZFoBGJmRCxtvs7FOuk_CN/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg');
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
