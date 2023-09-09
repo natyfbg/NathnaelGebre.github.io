@@ -12,7 +12,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" class="logo">
+                <img src=".docs/assets/logo.png" class="logo">
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -163,7 +163,7 @@
                     <a href="https://github.com/natyfbg"><i class="fa-brands fa-github"></i></i></a>
                     <a href="https://www.instagram.com/nathy_fbg/"><i class="fa-brands fa-instagram"></i></i></i></a>
                 </div>
-                <a href="/Assets/Nathnael Gebre Resume.pdf" download class="btn btn2">Download Resume</a>
+                <a href=".docs/assets/Nathnael Gebre Resume.pdf" download class="btn btn2">Download Resume</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
@@ -184,6 +184,48 @@
 
     <script src="/index.js"></script>
     <script>
+
+
+        var tabLinks = document.getElementsByClassName("tab-links");
+var tabContents = document.getElementsByClassName("tab-contents");
+
+function openTab(tabName){
+    for(tabLink of tabLinks){
+        tabLink.classList.remove("active-link");
+    }
+    for(tabContent of tabContents){
+        tabContent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabName).classList.add("active-tab");
+}
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+
+var submitButton = document.getElementById("submit-button");
+function handleButtonClick(){
+    submitButton.style.background = "#7e8185";
+    setTimeout(function(){
+        submitButton.style.background = "#ff004f";
+    }, 200)
+}
+
+
+
+
+
+
+
+
+
+
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyM1ppgCxB0RluO4I-xqgZdLEL4laDKlSkepR80ZWv2ZoYZFoBGJmRCxtvs7FOuk_CN/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById('msg');
