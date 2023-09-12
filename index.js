@@ -53,4 +53,30 @@ function toggleProjects() {
 
 
 
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  // Function to handle the fade-in and slide-in effects for elements
+  function animateElementsOnScroll() {
+    var skillsLogos = document.querySelectorAll('.skills');
+    var leftColumn = document.querySelector('.left-col');
+  
+    skillsLogos.forEach(function(skill) {
+      if (isElementInViewport(skill)) {
+        skill.classList.add('fade-in');
+        leftColumn.classList.add('slide-in');
+      }
+    });
+  }
+  
+  // Attach scroll event listener to trigger animations
+  window.addEventListener('scroll', animateElementsOnScroll);
+  
+  // Trigger animations on initial load
+  animateElementsOnScroll();
+  
+  
+  });
+
  
