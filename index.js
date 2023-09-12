@@ -28,3 +28,29 @@ function handleButtonClick(){
         submitButton.style.background = "#ff004f";
     }, 200)
 }
+
+
+
+// ------------------------ see more and hide projects------------------------
+
+// JavaScript function to toggle the "show-more" and "hide-more" classes
+let projectsVisible = false;
+
+function toggleProjects() {
+    const moreProjects = document.getElementById("more-projects");
+    const seeMoreBtn = document.getElementById("see-more-btn");
+
+    if (projectsVisible) {
+        moreProjects.classList.remove("show-more");
+        seeMoreBtn.innerText = "See More";
+    } else {
+        moreProjects.classList.add("show-more");
+        seeMoreBtn.innerText = "Show Less";
+    }
+
+    projectsVisible = !projectsVisible;
+}
+
+
+
+ 

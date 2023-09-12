@@ -476,3 +476,27 @@ nav .menu{
     display: block;
     padding-left: 10px;
 }
+
+
+/* -----------------------------------------css for more projects--------------------- */
+
+/* CSS for the transition effect */
+/* Add this CSS to your existing stylesheet */
+
+/* Initially hide the additional projects */
+/* Initially hide the additional projects */
+.more-projects .project-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+}
+
+/* Display the additional projects when the show-more class is added */
+.more-projects.show-more .project-list {
+    max-height: 1000px; /* Set a sufficiently large value to allow smooth expansion */
+    overflow: visible;
+    transition: max-height 1s ease-in-out;
+}
+
+
+ 
