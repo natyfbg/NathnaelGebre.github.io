@@ -370,6 +370,12 @@ form input, form textarea{
     margin-top: 0px;
     margin-left: 10px;
 }
+.btn.btn2.btn3:hover{
+    background-color: #9d1505; /* Changes the background color */
+    color: rgb(238, 238, 238); /* Changes the text color */
+    cursor: pointer; /* Changes the cursor to a pointer */
+    border: 1px solid #e90303;
+}
 .copyright{
     width: 100%;
     text-align: left;
